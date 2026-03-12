@@ -53,3 +53,16 @@ for _ in range(n):
     print(a, end=' ') #end=' ' é usado para imprimir os números na mesma linha, separados por um espaço
     a, b = b, a + b #a, b = b, a + b é uma forma de atualizar os valores de a e b ao mesmo tempo. 
     #O novo valor de a será o antigo valor de b, e o novo valor de b será a soma do antigo valor de a e do antigo valor de b.
+
+
+#números primos
+numero_primo = int(input("Digite um número inteiro para verificar se é primo: "))
+if numero_primo > 1:
+    for i in range(2, int(numero_primo**0.5) + 1): #int(numero_primo**0.5) + 1 é usado para otimizar a verificação de números primos,
+ # pois um número primo não pode ser dividido por nenhum número maior que sua raiz quadrada.
+        if numero_primo % i == 0:
+            print(f"O número {numero_primo} não é primo.")
+            break
+    else:    print(f"O número {numero_primo} é primo.")
+
+
