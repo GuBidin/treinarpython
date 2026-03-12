@@ -80,3 +80,12 @@ for caractere in texto:
     texto_invertido = caractere + texto_invertido #texto_invertido = caractere + texto_invertido 
     #é uma forma de construir a string invertida, adicionando cada caractere no início da string invertida.
 print(f"O texto invertido é: '{texto_invertido}'")
+
+#verificando se uma string é um palíndromo
+texto_palindromo = input("Digite um texto para verificar se é um palíndromo: ")
+texto_limpo = texto_palindromo.replace(" ", "").lower() #lower() é usado para converter o texto para minúsculas,
+#e replace(" ", "") é usado para remover os espaços em branco,
+# para que a verificação de palíndromo seja feita apenas com os caracteres, sem considerar maiúsculas ou espaços.
+if texto_limpo == texto_limpo[::-1]: #texto_limpo[::-1] é uma forma de inverter a string texto_limpo. 
+    #O [::-1] é um slice que percorre a string de trás para frente.
+    print(f"O texto '{texto_palindromo}' é um palíndromo.")
