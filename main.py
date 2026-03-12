@@ -37,3 +37,10 @@ numero = int(input("Digite um número inteiro: "))
 if numero % 2 == 0: #o operador % é o operador de módulo, que retorna o resto da divisão
     print(f"O número {numero} é par.")
 else:    print(f"O número {numero} é ímpar.")
+
+#calculando o fatorial de um número
+fatorial = 1
+numero_fatorial = int(input("Digite um número inteiro para calcular o fatorial: "))
+for i in range(1, numero_fatorial + 1): #for i in range(1, numero_fatorial + 1) significa que o loop vai começar em 1 e vai até numero_fatorial, incluindo o numero_fatorial
+    fatorial *= i #fatorial *= i é a mesma coisa que fatorial = fatorial * i
+print(f"O fatorial de {numero_fatorial} é: {fatorial}")
