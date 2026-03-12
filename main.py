@@ -72,3 +72,11 @@ contador = 0
 for caractere in texto:
     contador += 1
 print(f"O texto '{texto}' tem {contador} caracteres.")
+
+
+#invertendo uma string
+texto_invertido = ""
+for caractere in texto:
+    texto_invertido = caractere + texto_invertido #texto_invertido = caractere + texto_invertido 
+    #é uma forma de construir a string invertida, adicionando cada caractere no início da string invertida.
+print(f"O texto invertido é: '{texto_invertido}'")
