@@ -44,3 +44,12 @@ numero_fatorial = int(input("Digite um número inteiro para calcular o fatorial:
 for i in range(1, numero_fatorial + 1): #for i in range(1, numero_fatorial + 1) significa que o loop vai começar em 1 e vai até numero_fatorial, incluindo o numero_fatorial
     fatorial *= i #fatorial *= i é a mesma coisa que fatorial = fatorial * i
 print(f"O fatorial de {numero_fatorial} é: {fatorial}")
+
+#sequencia de Fibonacci
+n = int(input("Digite o número de termos da sequência de Fibonacci: "))
+a, b = 0, 1 #a primeio termo b segundo termo 0 e 1 são os dois primeiros termos da sequência de Fibonacci
+print("Sequência de Fibonacci:")
+for _ in range(n):
+    print(a, end=' ') #end=' ' é usado para imprimir os números na mesma linha, separados por um espaço
+    a, b = b, a + b #a, b = b, a + b é uma forma de atualizar os valores de a e b ao mesmo tempo. 
+    #O novo valor de a será o antigo valor de b, e o novo valor de b será a soma do antigo valor de a e do antigo valor de b.
