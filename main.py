@@ -31,3 +31,9 @@ print(f"A área do triângulo é: {area_triangulo}")
 celsius = float(input("Digite a temperatura em Celsius: "))
 fahrenheit = (celsius * 9/5) + 32
 print(f"A temperatura em Fahrenheit é: {fahrenheit}")
+
+#par ou ímpar
+numero = int(input("Digite um número inteiro: "))
+if numero % 2 == 0: #o operador % é o operador de módulo, que retorna o resto da divisão
+    print(f"O número {numero} é par.")
+else:    print(f"O número {numero} é ímpar.")
