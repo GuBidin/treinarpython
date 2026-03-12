@@ -66,3 +66,9 @@ if numero_primo > 1:
     else:    print(f"O número {numero_primo} é primo.")
 
 
+#contando o numero de caracteres em uma string
+texto = input("Digite um texto: ")
+contador = 0
+for caractere in texto:
+    contador += 1
+print(f"O texto '{texto}' tem {contador} caracteres.")
